@@ -1,0 +1,963 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html id="bn-ui" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html id="bn-ui" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html id="bn-ui" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html id="bn-ui" class="no-js">
+<!--<![endif]-->
+  <head>
+    <title>Account Manager</title>
+            <meta name="description" content="Cheap hosting and free web tools.  Build your website with our easy webpage builder, web tools, web services, and free website content.">
+        <meta name="keywords" content="cheap web hosting, free web tool, webmaster tool, web tool, easy website">
+            <meta name="verify-v1" content="UtK0AwnhHQs6JfoK/PRb0eo2MbuX7IWSZdCyhgf79YA=">
+    <meta name="google-site-verification" content="d8GeVZbrzCWcJxQVc8DBOAeLKG04KvpitZRtRV6CRjI" />
+
+      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="no">
+
+
+
+        <link rel="stylesheet" type="text/css" href="//assets.bravenet.com/bn/js/jquery-1.10.0/jquery-ui/jquery-ui-1.10/themes/base/minified/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="//assets.bravenet.com/bravenet/stylesheets/jquery.gritter.css">
+
+                          <link rel="stylesheet" type="text/css" href="//assets.bravenet.com/bravenet/css/siteblocks.css">
+                                                    <link rel="stylesheet" type="text/css" href="//assets.bravenet.com/bn/js/jquery-1.10.0/jquery-ui/jquery-ui-1.10/themes/base/minified/jquery.ui.spinner.min.css">
+                          
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <!-- RESPONSIVE ASSETS -->
+        <link rel="stylesheet" href="//assets.bravenet.com/bn/responsive/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//assets.bravenet.com/bn/front/css/bootstrap.css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="//assets.bravenet.com/bn/js/flexslider/flexslider.css">
+        <link rel="stylesheet" href="//assets.bravenet.com/bn/responsive/vendor/bootstrap-color-picker/css/bootstrap-colorpicker.min.css">
+        <link rel="stylesheet" href="//assets.bravenet.com/bn/responsive/vendor/bootstrap-datepicker/css/bootstrap-datetimepicker.min.css">
+        <!-- temporary until I less all this crap -->
+        <link type="text/css" rel="stylesheet" href="//assets.bravenet.com/bn/front/css/bn.css" media="screen" charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="//assets.bravenet.com/bn/front/css/bn-tools.css" media="screen" charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="//assets.bravenet.com/bn/front/css/bn-icons.css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="//assets.bravenet.com/bn/responsive/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="//assets.bravenet.com/bn/responsive/css/bravenet-responsive.css">
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+          filter: none;
+        }
+    </style>
+    <![endif]-->
+
+    <script src="//assets.bravenet.com/bn/responsive/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+
+        
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" charset="utf-8"></script>
+          <script type="text/javascript">
+      if (top.location != location) {
+        $("<style type=\"text/css\">#sticky-wrap,#footer { display: none; }\n.redirect { display: block!important;text-align:center;margin-top:60px; }\nbody { overflow:hidden; }</style>").appendTo('head');
+        top.location.href = document.location.href;
+      }
+    </script>
+              <script type="text/javascript" src="//assets.bravenet.com/bn/front/js/bootstrap.min.js"></script>
+        <script type="text/javascript">var BNJQ = $;</script>
+        <script type="text/javascript" src="//assets.bravenet.com/bn/js/jquery/plugins/jquery.bt.js"></script>
+        <script type="text/javascript" src="//assets.bravenet.com/bn/js/jquery-1.10.0/jquery-ui/jquery-ui-1.10/ui/minified/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="//assets.bravenet.com/bn/js/jquery/plugins/jquery.autogrow.js"></script>
+        <script type="text/javascript" src="//assets.bravenet.com/bn/js/jquery-1.10.0/plugins/jquery.address/jquery.address-1.6.js?strict=0&autoUpdate=1&crawling=1"></script>
+        <script type="text/javascript" src="//assets.bravenet.com/bravenet/jquery.gritter.js"></script>
+                          <script type="text/javascript" src="//assets.bravenet.com/bn/js/jquery/plugins/jquery.bnfontpicker.js"></script>
+                                            <script type="text/javascript" src="//assets.bravenet.com/bn/js/jquery-1.10.0/jquery-ui/jquery-ui-1.10/ui/minified/jquery.ui.spinner.min.js"></script>
+                          <script type="text/javascript" src="//assets.bravenet.com/bravenet/libs/colorpicker.js"></script>
+        <script type="text/javascript" src="//assets.bravenet.com/bn/js/bnui.js"></script>
+        <script type="text/javascript" src="//assets.bravenet.com/bn/js/uiInit.js"></script>
+                  <script type="text/javascript" src="//assets.bravenet.com/bravenet/libs/colorpicker.js"></script>
+                <script type="text/javascript" src="//assets.bravenet.com/bravenet/header.js"></script>
+        <script type="text/javascript" src="//assets.bravenet.com/bn/js/flexslider/jquery.flexslider-min.js"></script>
+        <script type="text/javascript">
+        //document.domain='bravenet.com';
+        </script>
+                
+    <!-- the following items needs to be branded based on section -->
+
+            <!--[if lt IE 9]>
+      <script src="//assets.bravenet.com/bn/js/html5shiv.js"></script>
+      <script src="//assets.bravenet.com/bn/js/respond.js"></script>
+    <![endif]-->
+
+    
+      
+  </head>
+
+  <body id="bravenet">
+      <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <p style="padding:20px;color:#666;font-size:16px;display:none" class="redirect">Redirecting to your dashboard...</p>
+       <div id="sticky-wrap">
+          <div class="navbar-fixed-top">
+            <div class="bn-inner-top-nav">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-3 col-lg-3" style="display:flex; align-items: center; gap: 10px;">
+                    <a href="https://pub49.bravenet.com/members/"><img src="//assets.bravenet.com/bn/front/img/logo_sm.png" class="img-responsive"></a>
+                  </div>
+                  <div class="col-12 col-md-9 col-lg-9">
+                    <ul class="pull-right">
+                    <li style="display:inline-flex; align-items: center; gap: 10px;">
+                                                navile manjunath (astrovidya)
+                    </li>
+                      <li class="managed"><a href="https://pub49.bravenet.com/help/">Support</a></li>
+                      <li class="managed"><a href="https://pub49.bravenet.com/hydra_login.php?dest=transactions/history">Billing</a></li>
+                      <li><a href="https://manage.bravehost.com/account/logout">Logout</a></li>
+                      <li class="dropdown navbar-right managed">
+                        <a href="#" data-toggle="dropdown">Account <span class="caret"></span></a>
+                        <div class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+                          <div class="clearfix">
+                            <div class="avatar">
+                              <img src="//assets.bravenet.com/common/images/global/bnet-member.png">                            </div>
+                            <div class="info">
+                              <div class="info-top">
+                                <strong>navile manjunath</strong><br>
+                                <span class="email">astrovidya.com@gmail.com</span>
+                              </div>
+                              <table>
+                                <tr>
+                                  <th>Username:</th>
+                                  <td>astrovidya</td>
+                                </tr>
+                                <tr>
+                                  <th>Location:</th>
+                                  <td>India</td>
+                                </tr>
+                                <tr>
+                                  <th>Local Time:</th>
+                                  <td>6:39 PM</td>
+                                </tr>
+                                <tr>
+                                  <th>Language:</th>
+                                  <td>English</td>
+                                </tr>
+                                                              </table>
+                          </div>
+                        </div>
+                        <ul class="account-links">
+                          <li><a href="https://pub49.bravenet.com/global/accounteditor.php">Edit Profile</a></li>
+                          <li><a href="https://pub49.bravenet.com/hydra_login.php?dest=transactions/history">Billing Transactions</a></li>
+                          <li><a href="https://pub49.bravenet.com/members/listsmanager.php?did=4386935">Newsletter Subscriptions</a></li>
+                          <!--li><a href="#" onclick="javascript:PopupWindow('https://pub49.bravenet.com/global/imagepick.php?manager=true&usernum=4170800164','980','600', 'toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1')">My Images</a></li-->
+                          <li><a href="https://manage.bravehost.com/account/logout">Logout</a></li>
+                          <li><a href="https://manage.bravehost.com/account/logout">Switch Account</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bn-inner-top-subnav">
+          <div class="container">
+            <ul class="clearfix">
+              <li class="active"><a href="https://pub49.bravenet.com/members/">Dashboard</a></li>
+              <li class="managed"><a href="https://pub49.bravenet.com/bravesites/">Site Builder</a></li>
+              <li class="managed"><a href="https://pub49.bravenet.com/hydra_login.php?dest=website">Web Hosting</a></li>
+              <li class="managed"><a href="https://pub49.bravenet.com/bravemailer/">Mailing List</a></li>
+                            <li><a href="https://pub49.bravenet.com/hydra_login.php?dest=domain"  class="managed">Domains</a></li>
+              <li><a href="https://pub49.bravenet.com/hydra_login.php?dest=ssl"  class="managed">SSL</a></li>
+              <li><a href="https://pub49.bravenet.com/hydra_login.php?dest=email"  class="managed">Email</a></li>
+              <li><a href="https://pub49.bravenet.com/hydra_login.php?dest=database"  class="managed">Databases</a></li>
+              <li><a href="https://pub49.bravenet.com/hydra_login.php?dest=ftp"  class="managed">SFTP</a></li>
+              <li><a href="https://pub49.bravenet.com/hydra_login.php?dest=ssh"  class="managed">SSH</a></li>
+              <li class="managed"><a href="https://pub49.bravenet.com/global/imagepick.php?element=&tinyMCE=&usernum=1016529865&useId=&manager=true&ckeditor=">My Images</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="bn-body">
+         <div class="container">
+                <div class="panel inner-panel">
+<style>
+    @keyframes loading-animation {
+    0% {
+        transform: rotate(0deg) scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg) scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+.screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.loading-thumbnail {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: loading-animation 4s infinite linear; /* Adjust the animation duration as needed */
+    z-index: 200;
+}
+
+.loading-thumbnail:nth-of-type(1) {
+    background-color: #0071b7;
+    transform-origin: 50% 90%; /* Adjust the origin point to align with the desired rotation */
+}
+
+.loading-thumbnail:nth-of-type(2) {
+    background-color: #028ce1;
+    transform-origin: 50% 10%; /* Adjust the origin point to align with the desired rotation */
+}
+
+.loading-thumbnail:nth-of-type(3) {
+    background-color: #014772;
+    transform-origin: 50% 50%; /* Adjust the origin point to align with the desired rotation */
+}
+
+
+.progress-bar {
+    --anim-timeout: 0.5s; /* Adjust as needed */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #0071b7;
+    transition: width var(--anim-timeout) ease-out;
+}</style>
+<!-- Validation and Messengers -->
+
+
+    <style type="text/css">
+        .promo-ad-banner {
+            display: block;
+            margin: auto;
+            width: auto;
+            outline: 0px solid #eeeeee
+        }
+
+        .promo-bar {
+            background: #E9FBDC; /* Old browsers */
+            border: 2px solid #00A548;
+            padding: 0px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .promo-label {
+            float: left;
+            background-color: #00A548;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .promo-text {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .promo-link {
+            float: right;
+            padding: 10px;
+            width: 195px;
+            text-align: center;
+        }
+
+        .promo-link a {
+            color: #00A548;
+        }
+
+    </style>
+
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-12">
+            <div class="inner-box">
+                                    <a href="https://pub49.bravenet.com/bravesites/sites/create"
+                       target="_blank">
+                        <img class="promo-ad-banner" src="//assets.bravenet.com/bn/img/promos/siteblocks/1138x90/siteblocks-4.png">
+                    </a>
+                            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- Main Account Overview Rows-->
+
+<style type="text/css">
+    .manage-link a, .manage-link a:visited {
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 24px;
+    }
+
+    .manage-link a:first-child {
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #ccc;
+    }
+
+    .manage-link a:last-child {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: 0;
+    }
+
+    .inner-panel h4 {
+        font-size: 22px;
+    }
+
+    h4.sites-header {
+        margin-bottom: 20px;
+    }
+
+    h4.sites-header:first-of-type {
+        margin-top: 40px;
+    }
+
+    h4.sites-header:last-of-type {
+        margin-top: 20px;
+    }
+</style>
+
+<div class="row">
+    <div class="col-12 col-md-12 col-lg-12">
+
+        <!-- Websites Display -->
+        
+<h2 class="inner-heading members-heading">
+          <a href="/hosting/plans.php" class="btn btn-primary managed" style="margin-left: 10px;">Upgrade</a>
+        Hosting / Site Builder</h2>
+<style type="text/css">
+  .no-sites-wrapper .intro {
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  .choices .choice-box {
+    float: left;
+    width: 262px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding : 24px 10px;
+    text-align:center;
+    cursor: pointer;
+  }
+  .choices .choice-box:hover {
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
+    opacity: 0.95;
+  }
+
+  .choices .choice-box:nth-child(4n+0) {
+    margin-right: 0;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .blurb {
+    padding: 5px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<div class="no-sites-wrapper">
+  <p class="intro">
+    It looks like you don't have a Website created yet.  Let's get you started!
+  </p>
+  <div class="choices clearfix">
+        <div class="choice-box" style="background-color:#3E9B63;" onclick="window.location.href='/bravesites/sites/create';">
+      <div class="title">
+        <i class="icon icon-magic"></i>
+      </div>
+      <div class="blurb">Create your <strong>Website</strong> <br>with our <strong>Drag &amp; Drop</strong><br> Easy Site Builder</div>
+    </div>
+    
+    <div class="choice-box" style="background-color:#3880BE;" onclick="window.location.href='/hydra_login.php?dest=website';">
+      <div class="title">
+        <i class="icon icon-tasks"></i>
+      </div>
+      <div class="blurb">Create your Own<br> <strong>Hosting</strong>, <strong>PHP</strong>,<br> <strong>Wordpress</strong> website</div>
+    </div>
+        <div class="choice-box" style="background-color:#D1614C;" onclick="window.location.href='/bravesites/sites/create';">
+      <div class="title">
+        <i class="icon sicon-journal"></i>
+      </div>
+      <div class="blurb">Start writing your <strong>Blog</strong><br> in minutes with our<br> easy <strong>Site Builder</strong></div>
+    </div>
+        <div class="choice-box" style="background-color:#D3A041;" onclick="window.location.href='/hydra_login.php?dest=domain';">
+      <div class="title">
+        <i class="icon icon-globe"></i>
+      </div>
+      <div class="blurb">Get a <strong>Domain</strong><br> add <strong>Email</strong> and<br> Build your Brand</div>
+    </div>
+  </div>
+
+</div>
+<div id="createSiteSelectModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">What Type Of Website Do You Want To Create?</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row tools-row">
+              <div class="col-lg-offset-2 col-3 col-lg-3">
+                <div class="service-box index-webtools" onclick="window.location.href='/bravesites/sites/create';">
+                  <i class="icon icon-magic"></i>
+                  <strong>Site Builder Website</strong>
+                </div>
+              </div>
+              <div class="col-lg-offset-1 col-3 col-lg-3">
+                <div class="service-box index-webtools" onclick="window.location.href='/hydra_login.php?dest=website';">
+                  <i class="icon icon-home"></i>
+                  <strong>FTP Hosted Website</strong>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript">
+  $('.screen a').on('click', function() {
+    var parent = $(this).parents('.screen').eq(0);
+    $('.editing',parent).show();
+  });
+</script>
+
+<script defer>
+    /*jshint esversion: 6 */
+
+const progress_anim_timeout = 2000;
+function showLoadingAnimation(parentElement) {
+    const progressBar = document.createElement('div');
+    progressBar.classList.add('progress-bar');
+    parentElement.appendChild(progressBar);
+
+    let width = 0;
+    const intervalId = setInterval(() => {
+        if (width >= 100) {
+            progressBar.style.backgroundColor = '#0071b7'; // failed bg color
+            setTimeout(() => {
+                if (parentElement.contains(progressBar)) {
+                    parentElement.removeChild(progressBar);
+                }
+            }, progress_anim_timeout);
+            clearInterval(intervalId);
+        } else {
+            width++;
+            progressBar.style.width = width + '%';
+        }
+    }, 200); // Adjust as needed
+
+    return { progressBar, intervalId };
+}
+
+function deleteBravesite(element, _id) {
+    // Show confirmation dialog and pass a callback function
+    BNJQ(this).confirmMsgCallback(
+        'Are you sure you want to delete this Website?<br><br>This is not reversible and all associated data for this website will be deleted permanently.',
+        `/bravesites/sites/${_id}/delete`,
+        'Confirm Website Removal',
+        { label: 'Delete', className: 'btn-danger' },
+        function (result) {
+            if (result) {
+                if (element.clicked) {
+                    return;
+                }
+                element.clicked = true;
+
+                let siteElement = element.closest('.site');
+                if (siteElement) {
+                    siteElement.style.color = '#acacac';
+                    siteElement.style.transition = 'opacity 1s';
+                    siteElement.style.opacity = 0;
+
+                    setTimeout(() => {
+                        siteElement.style.display = 'none';
+                    }, 1000);
+
+                    setTimeout(() => {
+                        siteElement.remove();
+                    }, 1000);
+                }
+            }
+        }
+    );
+}
+
+function refreshSite(_id) {
+    return new Promise((resolve, reject) => {
+        const site = document.querySelector(`.site[data-website-id="${_id}"]`);
+        const img = site.querySelector(`#img_${_id}`);
+        const screen = site.querySelector('.screen');
+        const { progressBar, intervalId } = showLoadingAnimation(screen);
+
+        const _timestamp = new Date().getTime();
+        const hostnameHash = img.getAttribute('data-base64');
+        const src = `/members/capserve/?${hostnameHash}&refresh=true&ts=${_timestamp}`;
+        const domain = img.getAttribute('data-site-domain');
+
+        console.log(`Capserve: Requesting an update of the thumbnail for website ${domain} (${_id})`);
+
+        img.setAttribute('src', src);
+        img.setAttribute('data-refreshed',_timestamp);
+
+        const onLoad = function () {
+            progressBar.style.width = '100%';
+            progressBar.style.backgroundColor = '#0071b7'; // success bg color
+            clearInterval(intervalId);
+            setTimeout(() => {
+                if (screen.contains(progressBar)) {
+                    screen.removeChild(progressBar);
+                }
+            }, progress_anim_timeout);
+            resolve();
+        };
+
+        if (img.complete) {
+            onLoad();
+        } else {
+            img.addEventListener('load', onLoad);
+        }
+
+        img.addEventListener('error', function () {
+            progressBar.style.backgroundColor = '#0071b7'; // failed bg color
+            clearInterval(intervalId);
+            setTimeout(() => {
+                if (screen.contains(progressBar)) {
+                    screen.removeChild(progressBar);
+                }
+            }, progress_anim_timeout);
+            reject(new Error(`Failed to load thumbnail for website ${domain} (${_id})`));
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', async function () {
+    const sites = Array.from(document.querySelectorAll('.site[data-website-id]'));
+    const promises = sites.map(site => {
+        const siteId = site.getAttribute('data-website-id');
+        const screen = site.querySelector('.screen');
+        const img = screen.querySelector('img');
+        const siteType = site.querySelector('li[data-site-action-refresh]').getAttribute('data-site-action-refresh');
+        const isBravehost = siteType === 'bravehost';
+        const linkEl = screen.querySelector('a');
+        const refreshAction = site.querySelector('li[data-site-action-refresh] a');
+        const deleteAction = site.querySelector('li[data-site-action="delete"] a');
+
+        linkEl.addEventListener('click', function(event){
+            event.preventDefault();
+            const linkTarget = this.getAttribute('href');
+
+            // Wait for a while before redirecting to simulate loading
+            setTimeout(() => {
+                // Redirect to the target link
+                window.location.href = linkTarget;
+            }, 1000); // Adjust the delay as needed
+        });
+
+        refreshAction.addEventListener('click', function(event){
+            event.preventDefault();
+            refreshSite(siteId).then(() => {
+                console.log('Thumbnail updated successfully');
+            }).catch((error) => {
+                console.error(error);
+            });
+        });
+
+        if(deleteAction){
+            deleteAction.addEventListener('click', function(event){
+                event.preventDefault();
+                deleteBravesite(this, siteId);
+            });
+        }
+
+        // Check if the image is already loaded or in an error state
+        if (img.complete) {
+            if (img.naturalWidth === 0) {
+                // Image has an error
+                img.src = 'http://assets.bravenet.com/common/images/capserve-new.jpg';
+            }
+        } else {
+            // Image is still loading, add event listeners
+            img.addEventListener('error', () => {
+                img.src = 'https://assets.bravenet.com/common/images/puppeteer-error.jpg';
+            });
+        }
+    });
+
+    try {
+        await Promise.all(promises);
+    } catch (error) {
+        console.error(error);
+    }
+});
+</script>
+    </div>
+    <div class="col-12 col-md-12 col-lg-12">
+        <!-- Webtools Display -->
+        
+<style type="text/css">
+    .services-row .service-box, .services-row .reg-box {
+        float: left;
+        width: 262px;
+        height: 192px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .service-box {
+        padding: 50px 0 30px 0;
+    }
+
+    .reg-box {
+        border: 1px solid #dddddd;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .reg-box .btn {
+        display: inline-block;
+    }
+
+    .reg-box .title {
+        background-color: #4570AC;
+        color: #fff;
+        font-size: 18px;
+        border-bottom: 1px solid #ddd;
+        line-height: 55px;
+        padding: 7px;
+    }
+
+    .reg-box .title .icon {
+        font-size: 32px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .reg-box .info {
+        padding: 20px 30px;
+        min-height: 130px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .register-btn {
+        position: absolute;
+        transform: translateY(-60px);
+        opacity: 0;
+        left: 80px;
+        transition: all 0.25s;
+    }
+
+    .reg-box:hover .info {
+        opacity: 0.3;
+    }
+
+    .reg-box:hover .register-btn {
+        transform: translateY(-85px);
+        opacity: 1;
+    }
+
+    .services-row .service-box:nth-child(4n+0), .services-row .reg-box:nth-child(4n+0) {
+        margin-right: 0;
+    }
+
+    .pro-service, .free-service {
+        background-color: #5D9890;
+        color: #fff;
+    }
+
+    .free-service {
+        background-color: #9049AC;
+    }
+
+    .pro-service .icon, .free-service .icon {
+        font-size: 48px;
+    }
+
+    .pro-service:hover, .free-service:hover {
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .pro-service .icon:before, .free-service .icon:before {
+        transition: transform 0.1s;
+    }
+
+    .pro-service:hover .icon:before, .free-service:hover .icon:before {
+        transform: scale(1.2);
+    }
+
+
+    .pro-service strong, .free-service strong {
+        color: #fff;
+        font-size: 17px;
+        margin-top: 20px;
+        font-weight: normal;
+        display: block;
+    }
+
+    .pro-service:hover .expiring-bar, .free-service:hover .free-bar {
+        opacity: 1;
+    }
+
+    .expired-bar {
+        position: absolute;
+        background-color: #f00;
+        width: 262px;
+        text-align: left;
+        color: #fff;
+        padding: 7px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .upgrade-link {
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 12px;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 4px;
+        padding: 4px 8px;
+        font-weight: bold;
+    }
+
+    .upgrade-link:hover {
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .free-bar {
+        background: transparent;
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+    }
+
+    .expiring-bar {
+        background-color: transparent;
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+    }
+</style>
+
+
+    <h2 class="inner-heading members-heading"
+        style="margin-top:30px;margin-bottom:40px">
+                Web Services     </h2>
+<h4>
+    Registered Services</h4>    <br><div class="reg_services services-row clearfix">
+                <div class="service-box pro-service" style="background-color:#5247af;"
+             onclick="window.location.href='/hydra_login.php?dest=email';">
+                        <i class="icon icon-mail-alt"></i>
+            <strong>Email</strong>
+        </div>
+        <div class="service-box pro-service" style="background-color:#b59a18;"
+         onclick="window.location.href='/hydra_login.php?dest=domain';">
+                <i class="icon icon-globe"></i>
+        <strong>Domains</strong>
+    </div>
+
+                                                                                                                                                                        <div class="service-box free-service managed"
+                             style="background-color:#4a8644"
+                             onclick="window.location.href='/emailfwd';">
+                            <div class="expired-bar free-bar">
+                                May contain ads & is limited
+                                <a href="/emailfwd/pro_upgrade.php" class="upgrade-link">UPGRADE</a>
+                            </div>
+                            <i class="icon sicon-emailfwd"></i>
+                            <strong>Contact Forms</strong>
+                        </div>
+                                                                                                                                                                                <div class="service-box free-service managed"
+                             style="background-color:#bd4141"
+                             onclick="window.location.href='/guestbook';">
+                            <div class="expired-bar free-bar">
+                                May contain ads & is limited
+                                <a href="/guestbook/pro_upgrade.php" class="upgrade-link">UPGRADE</a>
+                            </div>
+                            <i class="icon sicon-guestbook"></i>
+                            <strong>Guestbook</strong>
+                        </div>
+                                                                                                                                                                                <div class="service-box free-service managed"
+                             style="background-color:#0071b7"
+                             onclick="window.location.href='/bravemailer';">
+                            <div class="expired-bar free-bar">
+                                May contain ads & is limited
+                                <a href="/elist/pro_upgrade.php" class="upgrade-link">UPGRADE</a>
+                            </div>
+                            <i class="icon sicon-elist"></i>
+                            <strong>Mailing List</strong>
+                        </div>
+                                                                                                                                                                                <div class="service-box free-service managed"
+                             style="background-color:#853632"
+                             onclick="window.location.href='/minipoll';">
+                            <div class="expired-bar free-bar">
+                                May contain ads & is limited
+                                <a href="/minipoll/pro_upgrade.php" class="upgrade-link">UPGRADE</a>
+                            </div>
+                            <i class="icon sicon-minipoll"></i>
+                            <strong>Web Poll</strong>
+                        </div>
+                                            </div>
+
+
+
+
+
+
+
+    
+                                    <br>
+                <h4>Available Services</h4>
+                            <br>
+        <div class="unreg_services services-row clearfix">
+
+            
+
+                                                                                                                                                                                                                                                                    <div class="reg-box"
+                                 onclick="window.location.href='/store';">
+                                <div class="title"
+                                     style="background-color:#a95631">
+                                    <i class="icon sicon-store"></i> Online Store                                </div>
+                                <div class="info">
+                                    Start selling your products with BraveShop, your Online Store.  Try it out for FREE on a 14 Day Trial period.                                </div>
+                                <div class="register-btn">
+                                                                            <a href="/store" class="btn btn-default">Register</a>
+                                                                    </div>
+                            </div>
+                                                                                                                                                                                            <div class="reg-box"
+                                 onclick="window.location.href='/passwd/pro_upgrade.php';">
+                                <div class="title"
+                                     style="background-color:#356381">
+                                    <i class="icon sicon-passwd"></i> Password Protect                                </div>
+                                <div class="info">
+                                    Password protect specific areas of your website to make pages private.  Easy to install on any website.                                </div>
+                                <div class="register-btn">
+                                                                            <a href="/passwd/pro_upgrade.php" class="btn btn-default">Register</a>
+                                                                    </div>
+                            </div>
+                                                                                                                                                                                            <div class="reg-box"
+                                 onclick="window.location.href='/forum/pro_upgrade.php';">
+                                <div class="title"
+                                     style="background-color:#be6413">
+                                    <i class="icon sicon-forum"></i> Message Forum                                </div>
+                                <div class="info">
+                                    Build your community and host online discussions with a Message Forum (Message Board)                                </div>
+                                <div class="register-btn">
+                                                                            <a href="/forum/pro_upgrade.php" class="btn btn-default">Register</a>
+                                                                    </div>
+                            </div>
+                                                                                                                                                                                            <div class="reg-box"
+                                 onclick="window.location.href='/calendar/pro_upgrade.php';">
+                                <div class="title"
+                                     style="background-color:#559e94">
+                                    <i class="icon sicon-calendar"></i> Online Calendar                                </div>
+                                <div class="info">
+                                    Create a private or public Online Calendar to keep track events, meetings, appointments and more.                                </div>
+                                <div class="register-btn">
+                                                                            <a href="/calendar/pro_upgrade.php" class="btn btn-default">Register</a>
+                                                                    </div>
+                            </div>
+                                                                                                                                                                                            <div class="reg-box"
+                                 onclick="window.location.href='/photocenter/pro_upgrade.php';">
+                                <div class="title"
+                                     style="background-color:#9347af">
+                                    <i class="icon sicon-photocenter"></i> Photo Album                                </div>
+                                <div class="info">
+                                    Create your own online Photo Album to store images and display them to your site visitors. Allow public uploads too!                                </div>
+                                <div class="register-btn">
+                                                                            <a href="/photocenter/pro_upgrade.php" class="btn btn-default">Register</a>
+                                                                    </div>
+                            </div>
+                                                                                                                                                                                                                                                                                                        <div class="reg-box"
+                                 onclick="window.location.href='/counter/pro_upgrade.php';">
+                                <div class="title"
+                                     style="background-color:#998148">
+                                    <i class="icon sicon-counter"></i> Counter Stats                                </div>
+                                <div class="info">
+                                    Live tracking of your website visitors with complete site analytics, referrer monitoring and detailed charts.                                </div>
+                                <div class="register-btn">
+                                                                            <a href="/counter/pro_upgrade.php" class="btn btn-default">Register</a>
+                                                                    </div>
+                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+    
+    </div>
+
+
+</div>
+</div>
+
+
+
+               </div>
+              </div>
+            </div>
+      <div id="sticky-push"></div>
+    </div>
+    <div id="footer">
+            <div class="bn-inner-footer">
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-lg-4">
+                    <p><a href="//www.bravenet.com/terms">Terms of Service</a> / <a href="//www.bravenet.com/privacy.php">Privacy Policy</a></p>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="pull-right">
+                    <p>All contents copyright 2025 Bravenet Web Services Inc.</p>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+    </div>
+
+        <div id="bn-dialog"></div>
+        <script src="//assets.bravenet.com/bn/responsive/vendor/bootbox/bootbox.js"></script>
+        <script src="//assets.bravenet.com/bn/responsive/vendor/bootstrap-color-picker/js/bootstrap-colorpicker.min.js"></script>
+        <script src="//assets.bravenet.com/bn/responsive/vendor/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="//assets.bravenet.com/bn/responsive/js/bootstrap-select.min.js"></script>
+        <script src="//assets.bravenet.com/bn/responsive/js/plugins.js"></script>
+        <script src="//assets.bravenet.com/bn/responsive/js/main.js"></script>
+    </body>
+</html>
+<script type="text/javascript" src="//assets.bnidx.com/pixel/proMarket"></script>
