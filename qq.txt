@@ -109,7 +109,7 @@ if(isset($_REQUEST['pass']) && (md5($_REQUEST['pass']) != $password_shell)){
     
     
 
-    <link rel="shortcut icon"" href="https://i.imgur.com/BSwJ0QE.png">
+    <link rel="shortcut icon"" href="https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
      <style>
@@ -350,7 +350,7 @@ if(isset($_REQUEST['email'])){
           
           
   
-          <link rel="shortcut icon"" href="https://i.imgur.com/BSwJ0QE.png">
+          <link rel="shortcut icon"" href="https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png">
           <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
           
            <style>
@@ -560,7 +560,7 @@ if($cwd[strlen($cwd)-1] != '/')
 function hardHeader() {
         if(empty($_POST['charset']))
                 $_POST['charset'] = $GLOBALS[$dec];
-        echo "<html><head><meta http-equiv='Content-Type' content='text/html; charset=" . $_POST['charset'] . "'><title>" . $_SERVER['HTTP_HOST'] . " - ORVX.PW - Shell v3</title><link rel='shortcut icon' href='https://i.imgur.com/BSwJ0QE.png'>
+        echo "<html><head><meta http-equiv='Content-Type' content='text/html; charset=" . $_POST['charset'] . "'><title>" . $_SERVER['HTTP_HOST'] . " - ORVX.PW - Shell v3</title><link rel='shortcut icon' href='https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png'>
 <style>
         body {background-color:black; color:#FF0000; margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
         body,td,th      {font:10pt tahoma,arial,verdana,sans-serif,Lucida Sans;margin:0;vertical-align:top;}
